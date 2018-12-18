@@ -1,0 +1,253 @@
+                %% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+\usepackage{multicol}
+
+% personal data
+\name{Josh}{Marshall}
+%\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{1801 Woodland Rd, Apt. 108, Houghton, MI 49931}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1 989 941 5787}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}%                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{jrmarsha@mtu.edu}                               % optional, remove / comment the line if not wanted
+\homepage{github.com/anadon}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\small{Seeking challenging full time employment.}
+
+
+\section{Education}
+
+\vspace{5pt}
+
+\subsection{Academic Qualifications}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\cventry{2016--2018 (in progress)}{Masters of Science in Computer Science \textit{in progress} }{Michigan Technological University}{GPA 3.2}{}{}}
+
+\item{\cventry{2012--2016}{Bachelor of Science in Computer Science and Bioinformatics}{Michigan Technological University}{}{}{}}  % arguments 3 to 6 can be left empty
+
+\end{itemize}
+
+\vspace{2pt}
+
+\subsection{Notable Projects}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\textbf{Masters Project (Ongoing):} \textit{'Development of Marshall's Algorithms and Data structures LIBrary (MADLIB)'}
+
+\vspace{3pt}
+
+\small{
+\begin{itemize}
+\item Development of a high quality, robust, performant, standards compliant, verifiably correct algorithms and data structures for general bioinformatics development -- Revisions are under way after feedback from Boost maintainers
+\item graph implementation is being revised for submission to Boost
+\item Functionality to create file parsers using bison/flex, compiling library support for python, perl, and R, and other experiments are all ongoing works
+\end{itemize}
+}
+}
+
+\vspace{6pt}
+
+\item{\textbf{Masters Project (Finished):} \textit{'Recoding TF-Cluster in C++'}
+
+\vspace{3pt}
+
+\small{
+\begin{itemize}
+\item Add functionality from out of tree to the perl version of TF-Cluster
+\item Move to using general components in MADLIB
+\item Work is being done to add file support for .soft files, so data can be processed directly from the Gene Expression Omnibus.
+\item Is in use by the TF-Miner website at sys.bio.mtu.edu
+\end{itemize}
+}}
+
+\end{itemize}
+
+\vspace{2pt}
+
+%\subsection{Publications}
+%
+%\vspace{5pt}
+%
+%\begin{itemize}
+%
+%\item{\textbf{BMC Genomics (Pending):} \textit{'TF-Miner: Web-based Transcription Factor Mining Tools for %Identifying Regulatory Genes Controlling a Biological Pathway, Process or Complex Trait Using High-%throughput Gene Expression Data'}}
+%
+%\end{itemize}
+
+\section{Previous Employment}
+
+\vspace{6pt}
+
+\begin{itemize}
+	
+	\item{\cventry{September 2017 -- May 2018}{Graduate Research Assistant}{Michigan Technological University}{Dr. Hairong Wei}{}{\vspace{3pt}Research alternative splicing in plants through using and developing programs and pipelines as appropriate.}}
+	
+	\vspace{6pt}
+	
+	\item{\cventry{May 2017 -- August 2017}{Research Computing Support}{Michigan Technological University}{Information Technology Services}{}{\vspace{3pt}
+		\begin{itemize}
+			\item Selected for the first hire in the newly formed non-Highly Parallel Computing Research Support group in Michigan Tech IT
+			\item Updated and rebuilt the Immersive Visualization System display wall and computing cluster
+			\item Worked with various research support roles, and integrated Immersive Visualization System into Michigan Tech's Puppet infrastructure to better integrate with ongoing DevOps systems
+		\end{itemize}
+	}}
+	
+	\vspace{6pt}
+	
+	\item{\cventry{September 2016 -- May 2017}{Graduate Teaching Assistant}{Michigan Tech Dept. of Computer Science}{Leo Ureel}{}{\vspace{3pt}
+		\begin{itemize}
+			\item Supported the learning of introductory programming students through instruction and expanded office availability
+			\item Instrumental in expanding the Computer Science Learning Center to better support students
+		\end{itemize}
+	}}
+	
+	\vspace{6pt}
+	
+	\item{\cventry{November 2014 -- November 2015}{Research Programmer}{Michigan Technological University}{Department  of Computer Science}{}{\vspace{3pt}
+		\begin{itemize}
+			\item Recoded TF-Cluster with better conformance to best practices in C++, resulting in a 4000x speedup and 10x reduction in memory use for Dr. Hairong Wei
+			\item Worked as directed to develop unidirectional ring stabilization detection for Dr. Ali Ebnenasir
+			\item Created a highly secure VM container system to contain student programs being graded, and maintain FERPA requirements of student confidentiality for Lec. Leo Ureel
+		\end{itemize}
+	}}
+
+	
+\end{itemize}
+
+
+\section{Leadership}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item \textbf{Graduate Student Government:} Vice President, Representative (September 2016 -- November 2017)
+\begin{itemize}
+	\item Advanced to early candidacy for Graduate Student Government for my department based on leadership potential
+	\item Assumed multiple liaison positions to coordinate the three largest governing bodies on campus
+	\item Started the initiative to work with International Programs and Services to expand their acclimation programming
+	\item Started the initiative to stabilize and restructure how the university handles health insurance
+	\item Started the initiative to change how Graduate Teaching Assistant funding lines are awarded and pay stipends increase
+	\item Any difficult or risky tasks the elected board is given are moved to me for safe handling
+\end{itemize}
+
+\vspace{6pt}
+
+\item \textbf{Students' Textbook Lending Project:} Founder (November 2016 -- May 2018)
+\begin{itemize}
+	\item Collects donated textbooks and makes them available to students
+	\item I developed and presented this Proof of Concept to the University Senate in September 2016 as a means of supporting undergraduate students
+	\item Fosters a better learning environment for classmates, insuring they have access to their educational materials regardless of financial resources
+\end{itemize}
+
+\vspace{6pt}
+
+\item \textbf{Blue Marble Security Enterprise:} Project Leader, Lab Manager ( September 2012 -- December 2014)
+\begin{itemize}
+	\item Served as a project manager for our software development and support team in Fall 2012
+	\item In the following year I became the lab manager, responsible for keeping our space clean, organized, and well functioning for our teams to use for their projects
+\end{itemize}
+
+\end{itemize}
+
+
+
+
+
+\section{Relevant Coursework}
+
+\begin{multicols}{3}
+\begin{itemize}
+
+\item Advanced AI
+\item Advanced Algorithms
+\item Computer Security
+\item Data Mining
+\item Database Systems
+\item Distributed Systems
+\item Independent Research on HMMs
+\item Human-Computer Interfaces
+\item Machine Learning
+\item Network Programming
+\item Operating Systems
+\item Predictive Modeling
+\item Programming Languages
+\item Selected Topics in Cyber Law
+\item Systems Performance Analysis
+\item Systems Programming
+
+\end{itemize}
+\end{multicols}
+
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template.tex'.
