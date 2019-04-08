@@ -56,22 +56,22 @@
   % recompute lengths (in case we are switching from letter to resume, or vice versa)
   \recomputecvlengths%
   % optional photo (pre-rendering)
-  \@initializebox{\makecvheadpicturebox}%
-  \savebox{\makecvheadpicturebox}{%
-    \ifthenelse{\isundefined{\@photo}}%
-    {}%
-    {%
-      \color{color1}%
-      \setlength{\fboxrule}{\@photoframewidth}%
-      \ifdim\@photoframewidth=0pt%
-        \setlength{\fboxsep}{0pt}\fi%
-      \framebox{\includegraphics[width=\@photowidth]{\@photo}}}}%
+%  \@initializebox{\makecvheadpicturebox}%
+%  \savebox{\makecvheadpicturebox}{%
+%    \ifthenelse{\isundefined{\@photo}}%
+%    {}%
+%    {%
+%      \color{color1}%
+%      \setlength{\fboxrule}{\@photoframewidth}%
+%      \ifdim\@photoframewidth=0pt%
+%        \setlength{\fboxsep}{0pt}\fi%
+%      \framebox{\includegraphics[width=\@photowidth]{\@photo}}}}%
   % rendering
   \@makecvtitle%
     {%
       \raggedleft%
       % optional photo
-      \usebox{\makecvheadpicturebox}%
+%      \usebox{\makecvheadpicturebox}%
       % optional details
       \if@details%
         \ifthenelse{\isundefined{\@photo}}{}{\\[0.5em]}%

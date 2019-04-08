@@ -74,13 +74,13 @@
 
 % commands
 \renewcommand*{\makecvfoot}{%
-  \recomputecvfootlengths{}%
+%  \recomputecvfootlengths{}%
   \fancypagestyle{plain}{%
     \fancyfoot[c]{%
       \parbox[b]{\footwidth}{%
         \centering%
         \color{color2}\addressfont%
-        \vspace{\baselineskip}% forces a white line to ensure space between main text and footer (as footer height can't be known in advance)
+%        \vspace{\baselineskip}% forces a white line to ensure space between main text and footer (as footer height can't be known in advance)
         \ifthenelse{\isundefined{\@addressstreet}}{}{\addtofoot[]{\addresssymbol\@addressstreet}%
           \ifthenelse{\equal{\@addresscity}{}}{}{\addtofoot[~--~]{\@addresscity}}% if \addresstreet is defined, \addresscity and \addresscountry will always be defined but could be empty
           \ifthenelse{\equal{\@addresscountry}{}}{}{\addtofoot[~--~]{\@addresscountry}}%
@@ -89,10 +89,10 @@
           \addtofoot{\csname\collectionloopkey phonesymbol\endcsname\collectionloopitem}}%
         \ifthenelse{\isundefined{\@email}}{}{\addtofoot{\emailsymbol\emaillink{\@email}}}%
         \ifthenelse{\isundefined{\@homepage}}{}{\addtofoot{\homepagesymbol\httplink{\@homepage}}}%
-        \collectionloop{socials}{% the key holds the social type (=symbol command prefix), the item holds the link
-          \addtofoot{\csname\collectionloopkey socialsymbol\endcsname\collectionloopitem}}%
-        \ifthenelse{\isundefined{\@extrainfo}}{}{\addtofoot{\@extrainfo}}%
-        \ifthenelse{\lengthtest{\footboxwidth=0pt}}{}{\flushfoot}% the lengthtest is required to avoid flushing an empty footer, which could cause a blank line due to the \\ after the address, if no other personal info is used
+%        \collectionloop{socials}{% the key holds the social type (=symbol command prefix), the item holds the link
+%          \addtofoot{\csname\collectionloopkey socialsymbol\endcsname\collectionloopitem}}%
+%        \ifthenelse{\isundefined{\@extrainfo}}{}{\addtofoot{\@extrainfo}}%
+%        \ifthenelse{\lengthtest{\footboxwidth=0pt}}{}{\flushfoot}% the lengthtest is required to avoid flushing an empty footer, which could cause a blank line due to the \\ after the address, if no other personal info is used
         }}}%
   \pagestyle{plain}}
 
