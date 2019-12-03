@@ -8,6 +8,7 @@
 
 \documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
+\usepackage{fontspec}
 % modern themes
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{green}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
@@ -25,11 +26,12 @@
 
 % \usepackage{import}
 \usepackage{multicol}
+\usepackage{textcomp}
 
 % personal data
 \name{Josh}{Marshall}
 %\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
-\address{2100 Balsam Lane, Houghton, MI 49931}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\address{11 Talcott Forest Rd, Apt. G, Farmington, CT, 06032}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{+1 989 941 5787}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{01234 123456}%                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
@@ -56,6 +58,43 @@
 \makecvtitle
 
 
+\section{Employment}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+	\item{\cventry{July 2019 -- Present}{Software Engineer}{Jackson Laboratory}{}{}{\vspace{3pt}
+		\begin{itemize}
+			\item Designing initial components for the \"JAX Cube\" \texttrademark{}  initiative for systematically understanding disease
+			\item Creating integrated system for semantic web, archiving, and cloud compute
+		\end{itemize}
+	}}
+
+	\item{\cventry{January 2019 -- May 2019}{Software Developer}{Arroyo Networks}{}{}{\vspace{3pt}
+		\begin{itemize}
+			\item Self-motivated research, rapid learning of new tools, and contributions to first product design
+			\item Test driven and security minded development
+		\end{itemize}
+	}}
+	
+	\item{\cventry{November 2014 -- May 2018}{Various}{Michigan Technological University}{}{}{\vspace{3pt}
+		\begin{itemize}
+			\item Developed programs and pipelines to research gene expression networks
+			\item First hire in the IT non-HPC Research Support Group
+			\item Rebuilt the Immersive Visualization System cluster, Puppet integration
+			\item Recoded TF-Cluster resulting in a 4000x speedup and 10x reduction in memory
+			\item Developed unidirectional ring stabilization detection
+		\end{itemize}
+	}}
+
+	
+\end{itemize}
+
+\vspace{2pt}
+
+
+
 \section{Education}
 
 \vspace{5pt}
@@ -65,35 +104,6 @@
 \item{\cventry{2016--2018}{Masters of Science in Computer Science }{Michigan Technological University}{GPA 3.2}{}{}}
 \item{\cventry{2012--2016}{Bachelor of Science in Bioinformatics and Computer Science }{Michigan Technological University}{}{}{}}
 
-\end{itemize}
-
-\vspace{2pt}
-
-
-\section{Employment}
-
-\vspace{6pt}
-
-\begin{itemize}
-
-	\item{\cventry{January 2019 -- Present}{Software Developer}{Arroyo Networks}{}{}{\vspace{3pt}
-		\begin{itemize}
-			\item Self-motivated research, rapid learning of new tools, and contributions to first product design
-			\item Test driven and security minded development
-		\end{itemize}
-	}}
-	
-	\item{\cventry{November 2014 -- May 2018}{Various}{Michigan Technological University}{}{}{\vspace{3pt}
-		\begin{itemize}
-			\item Developing programs and pipelines to research gene expression networks
-			\item First hire in the IT non-HPC Research Support Group
-			\item Rebuilt the Immersive Visualization System cluster, Puppet integration
-			\item Recoded TF-Cluster resulting in a 4000x speedup and 10x reduction in memory
-			\item Develop unidirectional ring stabilization detection
-		\end{itemize}
-	}}
-
-	
 \end{itemize}
 
 \vspace{2pt}
@@ -136,6 +146,7 @@
 \vspace{3pt}
 
 \small{
+\texttt{github.com/anadon/madlib}
 \begin{itemize}
 \item Development of general bioinformatics development tools
 \item Graph implementation is being revised for submission to Boost
@@ -150,6 +161,7 @@
 \vspace{3pt}
 
 \small{
+\texttt{https://github.com/MichiganTech/hmmer}
 \begin{itemize}
 \item Converting an old C codebase to C++ and applying best practices
 \item Redeveloping as necessary to be efficient and enable vectorization
@@ -173,23 +185,13 @@
 
 \section{Technologies}
 
-\subsection{Expert - Lead medium sized projects or work in large projects}
-
-\begin{multicols}{3}
-\begin{itemize}
-
-\item C++
-
-\end{itemize}
-\end{multicols}
-
 \subsection{Highly Skilled - Lead small projects or work in large projects}
 
 \begin{multicols}{3}
 \begin{itemize}
 
+\item C++
 \item Bash, Zsh, Expect
-\item C
 \item Linux
 \item Python 3
 
