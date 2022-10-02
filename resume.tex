@@ -12,15 +12,15 @@
 % modern themes
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{green}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.75,margin=0.5in]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -36,7 +36,7 @@
 %\phone[fixed]{01234 123456}%                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{joshua.r.marshall.1991@gmail.com}                               % optional, remove / comment the line if not wanted
-\homepage{github.com/anadon}                         % optional, remove / comment the line if not wanted
+\homepage{github.com/anadon, gitlab.com/anadon}                         % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
@@ -64,16 +64,22 @@
 
 \begin{itemize}
 
-	\item{\cventry{July 2020 -- Present}{Software Engineer 3}{Factset Research Systems}{}{}{\vspace{3pt}
+	\item{\cventry{July 2020 -- Present}{Software Engineer 3}{FactSet Research Systems}{}{}{\vspace{3pt}
 		\begin{itemize}
-			\item Primary developer of a new product, Formula API
-			\item Maintain and develop production and legacy systems with modern best practices and a REST architecture for high performance and scalable systems
+			\item Primary developer of Formula API, a modern cloud REST service designed for high uptime and low operating cost
+			\item Validate a new Kong plugin for Concurrent Rate Limiting to address the limitations of Kong's native Rate Limiting plugin to better protect backend services from attacks and monetize parallel access
+			\item Manage cloud deployments through Docker and Heroku 
+			\item Introduced and championed DevOps tools and practices, ensuring software best practices and automating work leading to massively reduced code review time and higher code quality
+			\item Support the Product Development and Customer Support teams in meeting customer needs and requests
+			\item Perform comprehensive statistical analysis of code performance using a custom-built testing tool to confirm optimal operation of our projects and infrastructure
+			\item Fix complex bugs in distributed environments spanning multiple teams
+			\item Integrate with an in-house authentication and user access mechanism
 		\end{itemize}
 	}}
 
 	\item{\cventry{July 2019 -- July 2020}{Software Engineer}{Jackson Laboratory}{}{}{\vspace{3pt}
 		\begin{itemize}
-			\item Designed initial components for the \"JAX Cube\" \texttrademark{}  initiative for systematically understanding disease
+			\item Designed initial components for the JAX Cube\texttrademark{} initiative for systematically understanding disease
 			\item Created integrated system for semantic web, archiving, and cloud compute
 			\item Creating REST interface to unify multiple Laboratory Information Management Systems
 		\end{itemize}
@@ -83,6 +89,7 @@
 		\begin{itemize}
 			\item Contributions to first product design and implementation
 			\item Test driven and security minded development
+			\item Support OAuth2 integration into developed services
 		\end{itemize}
 	}}
 	
@@ -109,7 +116,7 @@
 
 \begin{itemize}
 
-\item{\cventry{2016--2018}{Masters of Science in Computer Science }{Michigan Technological University}{GPA 3.2}{}{}}
+\item{\cventry{2016--2018}{Masters of Science in Computer Science }{Michigan Technological University}{}{}{}}
 \item{\cventry{2012--2016}{Bachelor of Science in Bioinformatics and Computer Science }{Michigan Technological University}{}{}{}}
 
 \end{itemize}
@@ -130,52 +137,8 @@
 	\item Started the initiative to stabilize and restructure how the university handles health insurance
 \end{itemize}
 
-\vspace{6pt}
-
-\item \textbf{Students' Textbook Lending Project:} Founder (November 2016 -- May 2018)
-\begin{itemize}
-	\item Developed and presented this Proof of Concept to the University Senate in September 2016
 \end{itemize}
 
-\end{itemize}
-
-
-\vspace{2pt}
-
-\section{Projects}
-
-\vspace{5pt}
-
-\begin{itemize}
-
-\item{\textbf{Marshall's Algorithms and Data structures LIBrary (MADLIB):} \textit{Creator}
-
-\vspace{3pt}
-
-\small{
-\texttt{github.com/anadon/madlib}
-\begin{itemize}
-\item Development of general bioinformatics development tools
-\item Graph implementation is being revised for submission to Boost
-\item File parsers using bison/flex
-\end{itemize}
-}}
-
-\vspace{6pt}
-
-\item{\textbf{Hmmer version 2:} \textit{Fork}
-
-\vspace{3pt}
-
-\small{
-\texttt{https://github.com/MichiganTech/hmmer}
-\begin{itemize}
-\item Converting an old C codebase to C++ and applying best practices
-\item Redeveloping as necessary to be efficient and enable vectorization
-\end{itemize}
-}}
-
-\end{itemize}
 
 \vspace{2pt}
 
@@ -192,99 +155,27 @@
 
 \section{Technologies}
 
-\subsection{10+ years or equivalent}
-
-\begin{multicols}{3}
+\begin{multicols}{4}
 \begin{itemize}
 
-\item C++
-\item Bash, Zsh, Expect
+\item Bash, Expect
 \item Linux
 \item Python 3
 \item REST APIs
-
-\end{itemize}
-\end{multicols}
-
-\subsection{3+ years or equivalent}
-
-\begin{multicols}{3}
-\begin{itemize}
-
-\item Antlr4 
-\item Arduino
-\item Bison/Flex++
-\item Computer Networking
-\item Computer Security
 \item Django
 \item Docker
-\item flask
-\item git
+\item Flask
+\item Git
 \item Java
 \item Linux Packaging
-\item Machine Learning Techniques
-\item perl
+\item Machine Learning
+\item Perl
 \item R
 \item SQL
-\item { \fontfamily{ptm}\selectfont  \LaTeX }
-\item VisualBasic
-
-\end{itemize}
-\end{multicols}
-
-\subsection{Dabbled}
-
-\begin{multicols}{3}
-\begin{itemize}
-
-\item Android
-\item AppVeyor
-\item CPU design
-\item Django
-\item Electron Apps
-\item Guix
-\item JavaScript
-\item Kubernetes
-\item OpenCL
-\item OpenGL
-\item PHP
 \item Puppet
-\item Ruby
-\item Slurm
-\item TravisCI
-\item Web Technologies
-\item WordPress
-
 
 \end{itemize}
 \end{multicols}
-
-
-\section{Relevant Coursework}
-
-\begin{multicols}{3}
-\begin{itemize}
-
-\item Advanced AI
-\item Advanced Algorithms
-\item Computer Security
-\item Data Mining
-\item Database Systems
-\item Distributed Systems
-\item HMM Independent Research
-\item Human-Computer Interfaces
-\item Machine Learning
-\item Network Programming
-\item Operating Systems
-\item Predictive Modeling
-\item Programming Languages
-\item Selected Topics in Cyber Law
-\item Performance Analysis
-\item Systems Programming
-
-\end{itemize}
-\end{multicols}
-
 
 
 % Publications from a BibTeX file without multibib
